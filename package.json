@@ -1,0 +1,59 @@
+{
+  "name": "@goworks/async-select",
+  "version": "0.1.0",
+  "description": "",
+  "files": [
+    "demo/",
+    "lib/",
+    "es/",
+    "build/"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "stylePath": "style.js",
+  "scripts": {
+    "start": "build-scripts start",
+    "build": "build-scripts build",
+    "test": "build-scripts test",
+    "prepublishOnly": "npm run build",
+    "lint": "eslint --cache --ext .js,.jsx ./"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ice",
+    "react",
+    "component"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "prop-types": "^15.5.8",
+    "@alib/build-scripts": "^0.1.3",
+    "@alifd/next": "1.x",
+    "@ice/spec": "^0.1.1",
+    "axios-mock-adapter": "^1.18.2",
+    "build-plugin-component": "^0.2.0",
+    "build-plugin-fusion": "^0.1.0",
+    "build-plugin-moment-locales": "^0.1.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "eslint": "^6.0.1",
+    "react": "^16.3.0",
+    "react-dom": "^16.3.0"
+  },
+  "peerDependencies": {
+    "react": "^16.3.0",
+    "axios": "^0.19.2",
+    "prop-types": "^15.5.8",
+    "@alifd/next": "1.x"
+  },
+  "componentConfig": {
+    "name": "AsyncSelect",
+    "title": "async select",
+    "category": "select"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://unpkg.com/@goworks/async-select@0.1.0/build/index.html"
+}
